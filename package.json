@@ -1,0 +1,31 @@
+{
+  "name": "requirejsify",
+  "version": "1.0.0",
+  "description": "So you've started using Browserify... great! You're using bundler.require to expose some modules for dynamic requiring and it all makes sense, until you realise there's requireJS modules on the page that you can't edit... browserify's require is clashing with requireJS's require and you want to use them interchangeably.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "through2": "^0.6.3",
+    "vinyl-source-stream": "^1.1.0",
+    "browserify": "^6.3.4"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digijin/requirejsify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digijin/requirejsify/issues"
+  },
+  "homepage": "https://github.com/digijin/requirejsify"
+}
