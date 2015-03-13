@@ -1,8 +1,6 @@
-gulp = require 'gulp'
 browserify = require 'browserify'
 source = require 'vinyl-source-stream'
-
-through2 = require 'through2'
+gulp = require 'gulp'
 
 handler = require '../src/index.coffee'
 
@@ -11,7 +9,7 @@ bundler.require './index.js'
 
 
 bundler.bundle()
-	.pipe handler()
+	.pipe handler('../bower_components/requirejs/require.js')
 	.pipe source 'bundle.js'
 	.pipe gulp.dest '../dist'
 
