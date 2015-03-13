@@ -9,5 +9,5 @@ require = function() {
 };
 
 for (key in amd_require) {
-  require[key] = amd_require[k];
+  require[key] = amd_require[key];
 }
